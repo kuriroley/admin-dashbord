@@ -67,10 +67,12 @@ a:visited{
   display: flex;
   flex-direction: column;
   padding: 0.5em;
-  margin-left: 1em;
+  
 }
 .top-header-elements{
   display: grid;
+  margin-left: 1em;
+  margin-right: 1em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
@@ -100,15 +102,69 @@ a:visited{
 .elements-right{
   display: flex;
   flex-direction: row;
-  gap: 1em;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.1em;
 }
 .elements-right > svg{
   width: 8%;
+}
+.profile-picture{
+  background-color: rgb(70, 65, 60);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.profile-pic-2{
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(255, 192, 203, 0.838);
+  width: 15px;
+  height: 15px;
+}
+.profile-pic-3{
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(3, 184, 45, 0.33);
+  width: 25px;
+  height: 15px;
 }
 .header-user-nav{
   margin-top: 1em;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+}
+.header-profile-data{
+  display: flex;
+  gap: 1em;
+}
+.icon-user > div{
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+.user-greeting{
+  display: flex;
+  flex-direction: column;
+}
+.user-greeting span:nth-child(2){
+  font-weight: bold;
+}
+
+.header-user-buttons{
+  display: flex;
+  gap: 1em;
+}
+.header-user-buttons > button{
+  background-color: rgba(0, 0, 255, 0.814);
+  color: white;
+  padding: 0.5em 1.5rem;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px;
+  outline: none;
 }
 
 
