@@ -158,13 +158,20 @@ a:visited{
   gap: 1em;
 }
 .header-user-buttons > button{
-  background-color: rgba(0, 0, 255, 0.814);
+  background-color: rgba(3, 3, 170, 0.999);
   color: white;
   padding: 0.5em 1.5rem;
   cursor: pointer;
   border-radius: 20px;
   border: 1px;
   outline: none;
+}
+
+.main-content{
+  display: grid;
+  background-color: rgb(205, 203, 203);
+  margin-top: 1em;
+  grid-template-columns: 4fr 1fr;
 }
 
 
