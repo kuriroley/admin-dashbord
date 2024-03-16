@@ -66,15 +66,14 @@ a:visited{
 .right-container{
   display: flex;
   flex-direction: column;
-  padding: 0.5em;
   
 }
 .top-header-elements{
   display: grid;
-  margin-left: 1em;
-  margin-right: 1em;
+  padding: 1em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+  border-bottom: 3mm rgba(19, 19, 19, 0.133) ridge;
 }
 .top-nav{
   display: flex;
@@ -91,9 +90,9 @@ a:visited{
   position: relative;
 }
 .query{
-  width: 80%;
+  width: 90%;
   padding: 5px;
-  background-color: rgba(128, 128, 128, 0.576);
+  background-color: rgb(243, 243, 243);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 1em;
   outline: none;
@@ -169,9 +168,23 @@ a:visited{
 
 .main-content{
   display: grid;
-  background-color: rgb(205, 203, 203);
-  margin-top: 1em;
+  background-color: rgba(163, 161, 161, 0.195);
   grid-template-columns: 4fr 1fr;
+  padding: 1em;
+}
+
+.projects-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.projects-container > .title{
+  font-weight: bold;
+}
+.project{
+  width: 200px;
+  height: 200px;
+  background-color: pink;
 }
 
 
