@@ -214,3 +214,9 @@ a:visited{
   fill: inherit;
   cursor: pointer;
 }
+.announcements-container{
+  grid-column: 2/2;
+}
+.trending-container{
+  grid-column: 2/2;
+}
