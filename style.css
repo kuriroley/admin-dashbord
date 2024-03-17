@@ -169,7 +169,7 @@ a:visited{
 .main-content{
   display: grid;
   background-color: rgba(247, 247, 247, 0.195);
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   padding: 1em;
 }
 .projects-container{
@@ -183,7 +183,32 @@ a:visited{
   grid-template-columns: repeat(2,1fr);
 }
 .project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 0.1em;
   height: 200px;
-  width: 350px;
+  width: 340px;
+  border-radius: 5px;
   background-color: antiquewhite;
+  border-left: rgb(255, 179, 0) solid 5px;
+}
+
+.project-title{
+  font-weight: bold;
+  
+}
+.project-description{
+  font-size: 0.9em;
+}
+.project-icons{
+  align-self: flex-end;
+  
+}
+
+.project svg{
+  width: 8%;
+  fill: inherit;
+  cursor: pointer;
 }
