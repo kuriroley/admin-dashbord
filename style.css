@@ -70,10 +70,10 @@ a:visited{
 }
 .top-header-elements{
   display: grid;
-  padding: 1em;
+  padding: 1.8em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  border-bottom: 3mm rgba(19, 19, 19, 0.133) ridge;
+  border-bottom: 3mm rgba(11, 6, 6, 0.29) ridge;
 }
 .top-nav{
   display: flex;
@@ -92,7 +92,7 @@ a:visited{
 .query{
   width: 90%;
   padding: 5px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(209, 208, 208);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 1em;
   outline: none;
@@ -168,23 +168,22 @@ a:visited{
 
 .main-content{
   display: grid;
-  background-color: rgba(163, 161, 161, 0.195);
-  grid-template-columns: 4fr 1fr;
+  background-color: rgba(247, 247, 247, 0.195);
+  grid-template-columns: 3fr 1fr;
   padding: 1em;
 }
-
 .projects-container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-.projects-container > .title{
-  font-weight: bold;
+.project-cards{
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(2,1fr);
 }
 .project{
-  width: 200px;
   height: 200px;
-  background-color: pink;
+  width: 350px;
+  background-color: antiquewhite;
 }
-
-
