@@ -43,7 +43,7 @@ a:visited{
 .dashboard-elements{
   display: flex;
   flex-direction: column;
-  gap: 5em;
+  gap: 6em;
 }
 .dashboard-elements svg{
   width: 10%;
@@ -66,14 +66,13 @@ a:visited{
 .right-container{
   display: flex;
   flex-direction: column;
-  
 }
 .top-header-elements{
   display: grid;
   padding: 1.8em;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
-  border-bottom: 3mm rgba(11, 6, 6, 0.29) ridge;
+  border-bottom: 3mm rgba(149, 143, 143, 0.29) ridge;
 }
 .top-nav{
   display: flex;
@@ -96,7 +95,6 @@ a:visited{
   border: 2px solid rgb(255, 255, 255);
   border-radius: 1em;
   outline: none;
-  
 }
 .elements-right{
   display: flex;
@@ -165,12 +163,13 @@ a:visited{
   border: 1px;
   outline: none;
 }
-
 .main-content{
   display: grid;
-  background-color: rgba(247, 247, 247, 0.195);
+  background-color: rgba(199, 199, 199, 0.277);
   grid-template-columns: 2fr 1fr;
-  padding: 1em;
+  grid-template-rows: 1fr;
+  gap: 1em;
+  padding: 1.2em; 
 }
 .projects-container{
   display: flex;
@@ -216,7 +215,39 @@ a:visited{
 }
 .announcements-container{
   grid-column: 2/2;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.announce-card{
+  border-left: solid 5px rgba(121, 71, 71, 0.839);
+  background-color: antiquewhite;
+  border-radius: 5px;
+  height: 50vh;
+}
+.announce-text-container{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1.5em;
+  gap: 0.6em;
+  justify-content: space-between;
+}
+.announce-text-container > hr{
+  border: 1.5px solid black;
+}
+.announce-text{
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+.announce-title{
+  font-weight: bold;
+}
+.announce-log{
+  font-size: 0.9em;
 }
 .trending-container{
   grid-column: 2/2;
+  grid-row: 2/2;
+  
 }
